@@ -12,9 +12,10 @@ body {
 
 #about {
     display: flex;
-    padding: 5% 20% 0 20%;
+    justify-content: center;
+    padding: 5% 3% 0 3%;
     padding-bottom: 36px;
-    background-image: linear-gradient(110deg,rgb(32, 61, 74) 0 50%, white 50% 100%);
+    background-image: linear-gradient(110deg,rgb(9,143,175) 0 50%, white 50% 100%);
 }
 
 #about-image {
@@ -27,9 +28,9 @@ body {
     align-items: end;
     justify-content: center;
     font-size: 48px;
-    min-height: 500px;
     flex: 1;
-    outline: solid white;
+    min-height: 500px;
+    max-width: 700px;
 }
 
 #about-image > p {
@@ -42,11 +43,11 @@ body {
     justify-content: center;
     gap: 4px;
     background-color: white;
-    flex: 0.6;
+    flex: 0.5;
     height: min-content;
+    max-width: 700px;
     align-self: center;
-    outline: solid rgb(32, 61, 74);
-    box-shadow: 2px 2px 4px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #about-content > * {
@@ -59,4 +60,53 @@ body {
     flex-direction: row;
     justify-content: end;
     gap: 16px;
+}
+
+#about-buttons > img:hover {
+    transition: transform, ease-in-out;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#work {
+    padding-left: 3%;
+}
+
+#work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#project-image {
+    min-height: 250px;
+    min-width: auto;
+    color: white;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.4;
+    padding: 2px;
+}
+
+#project-buttons > img:hover {
+    transform: scale(1.2);
+    transition: transform ease-in-out;
+    cursor: pointer;
 }
