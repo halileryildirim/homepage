@@ -52,6 +52,10 @@ body {
     padding-left: 8px;
 }
 
+#about-content > p {
+    color: gray;
+}
+
 #about-content > * {
     padding: 8px;
     margin: 0;
@@ -191,4 +195,25 @@ body {
     min-height: 600px;
     min-width: 800px;
     margin: 48px 0 48px 0;
+}
+
+@media (max-width: 480px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #about {
+        flex-direction: column;
+    }
+    #about-image {
+        min-height: 500px;
+        width: 350px;
+        font-size: 24px;
+        align-self: center; 
+    }
+    #about-content {
+        box-shadow: none;
+    }
 }
