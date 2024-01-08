@@ -114,6 +114,10 @@ body {
     flex: 0.6;
 }
 
+#project-content > p {
+    color: grey
+}
+
 #project-header {
     display: flex;
     justify-content: space-between;
@@ -131,4 +135,60 @@ body {
     transform: scale(1.2);
     transition: transform ease-in-out;
     cursor: pointer;
+}
+
+#contact {
+    background-color: rgb(9, 143, 175);
+    color: white; 
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    max-width: 610px;
+    justify-content: start;
+    font-size: 20px;
+    gap: 24px;
+}
+
+#contact-info > * {
+    margin: 0;
+    padding: 0;
+}
+ 
+#contact-mail, #contact-phone {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#contact-buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+#twitter {
+    background-color: white;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+#contact-buttons > img:hover {
+    transition: transform, ease-in;
+    transform: scale(1.2);
+}
+
+#contact-image {
+    background: url(media/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    min-width: 800px;
+    margin: 48px 0 48px 0;
 }
