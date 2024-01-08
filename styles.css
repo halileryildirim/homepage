@@ -8,14 +8,14 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding: 0;
 }
 
 #about {
     display: flex;
     justify-content: center;
-    padding: 5% 3% 0 3%;
-    padding-bottom: 36px;
-    background-image: linear-gradient(110deg,rgb(9,143,175) 0 50%, white 50% 100%);
+    padding: 3% 0 3% 0;
+    background-image: linear-gradient(150deg,rgb(9,143,175) 0 50%, white 50% 100%);
 }
 
 #about-image {
@@ -29,8 +29,8 @@ body {
     justify-content: center;
     font-size: 48px;
     flex: 1;
-    min-height: 500px;
-    max-width: 700px;
+    min-height: 700px;
+    max-width: 700px; 
 }
 
 #about-image > p {
@@ -40,14 +40,16 @@ body {
 #about-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     gap: 4px;
+    font-size: 20px;
     background-color: white;
     flex: 0.5;
-    height: min-content;
-    max-width: 700px;
+    max-width: 700px; 
+    min-height: 500px;
     align-self: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 8px;
 }
 
 #about-content > * {
@@ -69,32 +71,47 @@ body {
 }
 
 #work {
-    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 1410px;
 }
 
 #work-container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center;
-    align-items: center; */
-    gap: 36px;
+    justify-content: space-between;
+    gap: 60px;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 400px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(204, 194, 194, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* margin: 0 16px 0 16px; */
+    
 }
 
 #project-image {
-    min-height: 250px;
-    min-width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
     color: white;
-    font-size: 36px;
     margin: 0;
     padding: 0;
+    flex: 1;
     text-align: center;
+}
+
+#project-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 0 16px;
+    flex: 0.6;
 }
 
 #project-header {
@@ -102,7 +119,12 @@ body {
     justify-content: space-between;
     align-items: center;
     flex: 0.4;
-    padding: 2px;
+    padding: 4px;
+}
+
+#project-buttons {
+    display: flex;
+    gap: 12px;
 }
 
 #project-buttons > img:hover {
