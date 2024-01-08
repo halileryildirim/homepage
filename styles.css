@@ -5,4 +5,58 @@
 
 body {
     font-family: playfair, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#about {
+    display: flex;
+    padding: 5% 20% 0 20%;
+    padding-bottom: 36px;
+    background-image: linear-gradient(110deg,rgb(32, 61, 74) 0 50%, white 50% 100%);
+}
+
+#about-image {
+    background: url(media/about.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 48px;
+    min-height: 500px;
+    flex: 1;
+    outline: solid white;
+}
+
+#about-image > p {
+    margin: 0;
+}
+
+#about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    background-color: white;
+    flex: 0.6;
+    height: min-content;
+    align-self: center;
+    outline: solid rgb(32, 61, 74);
+    box-shadow: 2px 2px 4px black;
+}
+
+#about-content > * {
+    padding: 8px;
+    margin: 0;
+}
+
+#about-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 16px;
 }
