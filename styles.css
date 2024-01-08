@@ -193,27 +193,30 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 600px;
-    width: 800px;
+    min-width: 800px;
+    max-width: 800px;
     margin: 48px 0 48px 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
     #about {
         flex-direction: column;
         background-image: linear-gradient(225deg, rgb(9, 143, 175) 0 50%, white 50% 100%);
     }
     #about-image {
         min-height: 450px;
-        width: 70%;
+        width: 80%;
         font-size: 24px;
         align-self: center; 
     }
     #about-content {
         box-shadow: none;
-        width: 80%;
+        width: fit-content;
+        align-self: center;
     }
     #about-content > h1{
         text-align: center;
+        padding-left: 0%;
     }
     #about-buttons {
         justify-content: center;
@@ -246,12 +249,13 @@ body {
     }
     #contact-image {
         min-height: 700px;
+        min-width: 100%;
         max-width: 100%;
         margin: 0; 
     }
 }
 
-@media (max-width:1024px) {
+@media (min-width:720px) and (max-width:1024px) {
     #about {
         background-image: linear-gradient(225deg, rgb(9, 143, 175) 0 50%, white 50% 100%);
     }
@@ -268,14 +272,10 @@ body {
         justify-content: center;
         align-items: center;
     }
-    #contact {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
     #contact-image {
         min-height: 500px;
-        max-width: 300px;
+        min-width: 400px;
+        max-width: 400px;
     }
     #contact-info {
         max-height: 500px;
